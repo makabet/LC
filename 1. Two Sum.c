@@ -39,8 +39,8 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize){
 /***********************************************/
 int* twoSum(int* nums, int numsSize, int target) {
     
-    int min=INT_MAX; 
-    int max=INT_MIN;
+    int min=0x7FFFFFFF; //INT_MAX; 
+    int max=0; //INT_MIN;
     
     for (int i=0;i<numsSize;i++) {
         if (nums[i]<min) min=nums[i];
